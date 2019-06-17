@@ -1,4 +1,12 @@
 language: node_js
 node_js:
-	- "7"
+  - node
+branches:
+  only:
+    - master
 
+script:
+  - npm i
+cache:
+  directories:
+    - node_modules
