@@ -1,4 +1,4 @@
-const { suma } = require("./suma");
+const { suma } = require("./suma")
 
 describe("Test Suma", () => {
   it("suma", () => {
