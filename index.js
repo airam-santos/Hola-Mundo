@@ -1,9 +1,3 @@
-function sum(a, b) {
-  return a + b;
-}
-module.exports = sum;
-
-
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
