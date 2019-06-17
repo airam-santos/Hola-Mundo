@@ -1,7 +1,5 @@
-const { suma } = require("./suma")
-
-describe("Test Suma", () => {
-  it("suma", () => {
-    expect(suma(4, 5)).toEqual(9);
-  });
+const { suma } = require('./suma')
+test('suma', () => {
+  expect(suma(1, 2)).toBe(3);
 });
+
