@@ -9,3 +9,7 @@ script:
   - npm i
   - npm run test 
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: 0718ebd4-308a-40a0-a6ea-5b1a5a692987
