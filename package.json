@@ -1,0 +1,19 @@
+{
+  "name": "travis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airam-santos/Hola-Mundo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airam-santos/Hola-Mundo/issues"
+  },
+  "homepage": "https://github.com/airam-santos/Hola-Mundo#readme"
+}
