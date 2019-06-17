@@ -7,7 +7,7 @@ branches:
 
 script:
   - npm i
-  - 
+ 
 cache:
   directories:
     - node_modules
