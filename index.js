@@ -1,4 +1,7 @@
-console.log('Hola Mundo');
-let num1=4;
-let num2=3;
-let suma=num1+num2;
+console.log("Hola Mundo");
+function suma(num1, num2) {
+  return num1 + num2;
+}
+module.exports = {
+  suma
+};

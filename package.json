@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/airam-santos/Hola-Mundo/issues"
   },
-  "homepage": "https://github.com/airam-santos/Hola-Mundo#readme"
+  "homepage": "https://github.com/airam-santos/Hola-Mundo#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
