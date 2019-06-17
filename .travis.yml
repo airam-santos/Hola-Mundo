@@ -7,7 +7,7 @@ branches:
 
 script:
   - npm i
- 
+  - npm run test 
 cache:
   directories:
     - node_modules
