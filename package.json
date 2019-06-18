@@ -17,7 +17,7 @@
     "url": "https://github.com/airam-santos/Hola-Mundo/issues"
   },
   "homepage": "https://github.com/airam-santos/Hola-Mundo#readme",
-  "devDependencies": {
+  "dependencies": {
     "jest": "^24.8.0",
     "express": "^4.16.3"
   }
