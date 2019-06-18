@@ -6,7 +6,7 @@ branches:
   - ocean
 env:
   global:
-  - REMOTE_PATH=Uploads/Travis_CI/Hello_World_Test
+  - REMOTE_PATH=Uploads/Travis_CI/Hello_World_Test/Hola-Mundo
   - REMOTE_USER=deployman
   - REMOTE_HOST=104.248.246.220
 before_install:
