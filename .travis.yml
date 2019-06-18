@@ -1,14 +1,20 @@
 language: node_js
 node_js:
-- node
+- stable
 branches:
   only:
-  - master
+  - gh-pages
+after_success:
+  - bash scripts/deploy.sh
+
 script:
 - npm i
 - npm run test
 deploy:
-  provider: heroku
-  api_key:
-    secure: QWouoqIFL1mJPfbLch4yeTVLPzvVIwJnheP01/ZXJ04nvaenCsWrZhnL/Xn0RzdYCcO7p0tTCEBCDCf2NcINOHHfdAQy96rl/q9PS5zG69PDOSfUJhiDumRq/r+xlFNitXiyXIvOSjgbctm8x0mbdaMSNmSnkYTIiE7NT4FuA13PJH1/xa4GFdSK6ZzT9U6cOfd4/4k2j8kXE3exlIyPHhdXv1LKHdRLPULLBSlekDFXkEGP/rORyXBn5rnmF//BmcSc7dy4VqnE1tSlfs/DLLkPRtBI5G33O6hQbaAEgxgdaUwJy6+1oDNn31v7+ljexM3esjSmxmuTuu3HbvaHimOXkmNPp6aFO0VCKLnyV4zqX1iZxtnJLF607j+TjcqqHy4doTD8dzyzXmDjrs4L7ojdA4p1ZEPTrB9ILjUYy4aZF/0epe71dfWsYpxp6xq/oxZup1UGPKDfPstxqiiGVKsCBmUuASk74LOus+u+YTYSSFxURgViqfTDPHYDBf1BHEMfuwzTx03ZmPIf/dxmzajlUJ7cOm+8Xec30mAnx0/a4Qky6YvhOPpbnZ/XPa86JDsTO4ZFbKAFeW1jc+nyQm1cblwpbNQS5Ix3ImNMzFJXAsQpvvrnJxQ6Qu3fZxyPiMax/uBzLeoppm0RVnVnUlJ5mCDKU5Yvf6NvcXgQwqs=
-  app: enigmatic-sea-32641
+  local_dir: gh-pages
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: build_gh
