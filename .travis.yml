@@ -3,17 +3,13 @@ node_js:
 - stable
 branches:
   only:
-  - gh-pages
-
-
-script:
-- npm i
-- npm run test
-deploy:
-  local_dir: gh-pages
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  on:
-    branch: build_gh
+  - ocean
+env:
+  global:
+  - REMOTE_PATH=Uploads/Travis_CI/Hello_World_Test
+  - REMOTE_USER=deployman
+  - REMOTE_HOST=104.248.246.220
+before_install:
+- bash scripts/install.sh
+after_success:
+- bash scripts/deploy.sh
