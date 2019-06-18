@@ -4,8 +4,7 @@ node_js:
 branches:
   only:
   - gh-pages
-after_success:
-  - bash scripts/deploy.sh
+
 
 script:
 - npm i
